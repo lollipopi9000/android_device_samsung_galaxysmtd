@@ -17,10 +17,9 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S"
+#define BTM_DEF_LOCAL_NAME   "DroidPorn"
 
-#define BLE_INCLUDED FALSE
-#define BTA_GATT_INCLUDED FALSE
-#define SMP_INCLUDED FALSE
-
+#define BLE_INCLUDED TRUE
+#define BTA_GATT_INCLUDED TRUE
+#define SMP_INCLUDED TRUE
 #endif
