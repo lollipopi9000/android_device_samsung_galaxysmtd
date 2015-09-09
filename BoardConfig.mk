@@ -23,7 +23,8 @@
 BOARD_SECOND_CAMERA_DEVICE := /dev/video2
 
 # Kernel Config
-TARGET_KERNEL_CONFIG := omni_galaxysmtd_defconfig
+# TARGET_KERNEL_CONFIG := omni_galaxysmtd_defconfig
+TARGET_PREBUILT_KERNEL := device/samsung/galaxysmtd/boot.img
 
 # FM Radio
 BOARD_HAVE_FM_RADIO := true
