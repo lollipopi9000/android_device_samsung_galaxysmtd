@@ -1,0 +1,26 @@
+[
+  {
+    "repository":   "android_packages_apps_SamsungServiceMode",
+    "target_path":  "packages/apps/SamsungServiceMode",
+  },
+  {
+    "repository":   "android_device_samsung_aries-common",
+    "target_path":  "device/samsung/aries-common",
+  },
+  {
+    "repository":   "android_kernel_samsung_aries",
+    "target_path":  "kernel/samsung/aries",
+  },
+  {
+    "repository":   "android_hardware_samsung",
+    "target_path":  "hardware/samsung",
+  },
+  {
+    "repository":   "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.7",
+    "target_path":  "prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
+  },
+  {
+    "repository":   "android_prebuilts_gcc_darwin-x86_arm_arm-eabi-4.7",
+    "target_path":  "prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7",
+  }
+]
