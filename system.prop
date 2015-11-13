@@ -5,4 +5,6 @@
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
 ro.sf.lcd_density=240
-
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
