@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 
+# Build messaging app
+PRODUCT_PACKAGES += \
+	messaging
+
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
