@@ -29,7 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/galaxysmtd/bluetoo
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/aries
-TARGET_KERNEL_CONFIG := cyanogenmod_galaxysmtd_defconfig
+TARGET_KERNEL_CONFIG := omni_galaxysmtd_defconfig
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysmtd/recovery/recovery_keys.c
