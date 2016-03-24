@@ -17,9 +17,13 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "DroidPorn"
+#define BTM_DEF_LOCAL_NAME   "GT-I9000"
 
-#define BLE_INCLUDED TRUE
-#define BTA_GATT_INCLUDED TRUE
-#define SMP_INCLUDED TRUE
+#define BTA_DISABLE_DELAY 100 /* in milliseconds */
+#define PAN_NAP_DISABLED TRUE
+#define BLE_INCLUDED FALSE
+#define BTA_GATT_INCLUDED FALSE
+#define SMP_INCLUDED FALSE
+
+
 #endif
