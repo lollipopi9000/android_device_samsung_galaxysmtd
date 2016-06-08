@@ -27,3 +27,4 @@ ro.kernel.android.checkjni=0
 ro.config.nocheckin=1
 dalvik.vm.image-dex2oat-filter=everything
 dalvik.vm.dex2oat-filter=everything
+persist.sys.force_highendgfx=1
