@@ -4,27 +4,56 @@
 
 rild.libpath=/system/lib/ril-wrapper.so
 rild.libargs=-d /dev/ttyS0
+
+# Density in DPI of the LCD of this board.
 ro.sf.lcd_density=240
-ro.secure=0
-persist.sys.use_16bpp_alpha=1
-persist.sys.NV_FPSLIMIT=60 
-persist.sys.use_dithering=0
-logcat.live=disable
-ro.min.fling_velocity=8000
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
-persist.sys.purgeable_assets=1
-dalvik.vm.dexopt-flag=o=y,m=y
+
+# Set default USB interface
+persist.sys.usb.config=mtp
+
+# Increase speed for UMS transfer
+ro.vold.umsdirtyratio=20
+
+# Disable ringtone delay
 ro.telephony.call_ring.delay=0
-pm.sleep_mode=1
-ro.config.hw_quickpoweron=true
-persist.sys.ui.hw=1 
-debug.kill_allocating_task=0 
-windowsmgr.max_events_per_sec=150
+
+# Performance tweaks
 debug.performance.tuning=1
+persist.sys.use_16bpp_alpha=1
+persist.sys.use_dithering=0
+persist.sys.ui.hw=1 
+debug.composition.type=dyn
+
+# Increase responsiveness
+ro.min.fling_velocity=8000
+windowsmgr.max_events_per_sec=150
+
+# VM optimizations
 ro.kernel.checkjni=0
 ro.kernel.android.checkjni=0
 ro.config.nocheckin=1
+dalvik.vm.dexopt-flag=o=y,m=y
 dalvik.vm.image-dex2oat-filter=everything
 dalvik.vm.dex2oat-filter=everything
+
+# Reduce background apps limit to 16 on low-tier devices
+ro.sys.fw.bg_apps_limit=16
+
+# Set max background services
+ro.config.max_starting_bg=8
+
+# Force high-end graphics in low ram mode
 persist.sys.force_highendgfx=1
+
+# Enable smooth streaming
+mm.enable.smoothstreaming=true
+
+# Various 
+ro.secure=0
+logcat.live=disable
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+persist.sys.purgeable_assets=1
+pm.sleep_mode=1
+ro.config.hw_quickpoweron=true
+debug.kill_allocating_task=0 
